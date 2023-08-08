@@ -1,7 +1,7 @@
 package shop.mtcoding.bank.config.jwt;
 
 /**
- * SECRET은 노출되묜 안된다. (클라우드 AWS - 환경변수, 파일에 있는 것을 읽을 수도 있고)
+ * SECRET은 노출되면 안된다. (클라우드 AWS - 환경변수, 파일에 있는 것을 읽을 수도 있고)
  * 리플레시 토큰 (지금은 구현 x)
  */
 public interface JwtVO {
