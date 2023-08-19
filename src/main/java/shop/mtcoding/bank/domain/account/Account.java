@@ -22,7 +22,7 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true, nullable = false, length = 20)
+    @Column(unique = true, nullable = false, length = 4)
     private Long number; // 계좌번호
 
     @Column(nullable = false, length = 4)
@@ -32,7 +32,7 @@ public class Account {
     private Long balance; // 잔액(기본값 1000원)
 
     // 항상 ORM에서 fk의 주인은 Many Entity 쪽이다.
-    @ManyToOne(fetch = FetchType.LAZY) // account.getUser().아무필드호출() == Lazy 발동
+    @ManyToOne(fetch = FetchType.LAZY)// account.getUser().아무필드호출() == Lazy 발동
     private User user; // user_id
 
     @CreatedDate // Insert

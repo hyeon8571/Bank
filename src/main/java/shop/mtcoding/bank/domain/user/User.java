@@ -24,7 +24,7 @@ public class User {
     @Column(unique = true, nullable = false, length = 20)
     private String username;
 
-    @Column(nullable = false, length = 60) // 패스워드 인코딩(BCrypt)시 늘어나서 60자로 줌
+    @Column(nullable = false, length = 60) // 패스워드 인코딩(BCrypt시 늘어나서 60자로 줌
     private String password;
 
     @Column(nullable = false, length = 20)

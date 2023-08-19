@@ -18,7 +18,7 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 import shop.mtcoding.bank.config.auth.LoginUser;
 
 /*
- * 모든 주소에서 동작함 (토큰 검증)
+ * 모든 주소에서 동작함 (토큰 검증), SecurityConfig에 인증이 필요하다고 등록된 url 내에서 모든 주소
  */
 public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
     private final Logger log = LoggerFactory.getLogger(getClass());
